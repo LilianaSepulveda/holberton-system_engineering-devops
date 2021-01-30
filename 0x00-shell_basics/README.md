@@ -13,3 +13,4 @@ ls -la . .. /boot list in long format all the files even ones hidden, in the cur
 file /tmp/iamafile type of file named iamafila in /tmp/ directory
 ln -s /bin/ls __ls__ create a symbolic link to /bin/ls, named __ls__
 cp -r *.html  .. copy all html file from current working directory to the parent of the working directory
+mv [[:upper:]]* /tmp/u/ moves all files beginning with an uppercase letter to the directory /tmp/u
