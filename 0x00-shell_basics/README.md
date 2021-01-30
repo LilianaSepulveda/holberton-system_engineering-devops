@@ -12,3 +12,4 @@ cd - changes the working directory to the previus one
 ls -la . .. /boot list in long format all the files even ones hidden, in the current directory and the parent of working directory and the /boot directory
 file /tmp/iamafile type of file named iamafila in /tmp/ directory
 ln -s /bin/ls __ls__ create a symbolic link to /bin/ls, named __ls__
+cp -r *.html  .. copy all html file from current working directory to the parent of the working directory
