@@ -9,4 +9,4 @@ chmod a+x hello execution permission to the owner, the group owner and the other
 chmod 007 hello add all the permission to the file hello only for other users
 chmod 753 hello permission of the file hello of this way -rwxr-x-wx
 chmod --reference=olleh hello  the mode of the file hello the same as ollehs mode, mirror task
-chmod -R a+x ./  add execute permission to all subdirectories of the current directory for the owner, group  and all other users
+chmod -R a+X ./  add execute permission to all subdirectories of the current directory for the owner, group  and all other users
