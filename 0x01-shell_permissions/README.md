@@ -14,3 +14,5 @@ mkdir -m 751 dir_holberton creates a directory called dir_holberton with permiss
 chgrp holberton hello changes the group owner to holberton for the file hello
 chown -R betty:holberton . changes the owner to betty and the group owner to holberton for all the files and directories in the working directory.
 chown -h betty:holberton _hello changes the owner and the group owner of the file _hello to betty and holberton respectively.
+only if it is owned by the user guillaume.
+chown --from=guillaume betty hello change the owner of the file hello to betty only if it is owned by the user guillaume
