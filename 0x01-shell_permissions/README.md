@@ -10,3 +10,4 @@ chmod 007 hello add all the permission to the file hello only for other users
 chmod 753 hello permission of the file hello of this way -rwxr-x-wx
 chmod --reference=olleh hello  the mode of the file hello the same as ollehs mode, mirror task
 chmod -R a+X ./  add execute permission to all subdirectories of the current directory for the owner, group  and all other users
+mkdir -m 751 dir_holberton creates a directory called dir_holberton with permissions 751 in the working directory
