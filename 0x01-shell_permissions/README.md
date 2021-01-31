@@ -8,3 +8,4 @@ chmod u+x,g+x,o+r hello execute permission to the owner and the group owner, and
 chmod a+x hello execution permission to the owner, the group owner and the other users, to the file hello
 chmod 007 hello add all the permission to the file hello only for other users
 chmod 753 hello permission of the file hello of this way -rwxr-x-wx
+chmod --reference=olleh hello  the mode of the file hello the same as ollehs mode, mirror task
