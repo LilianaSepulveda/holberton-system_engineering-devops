@@ -4,3 +4,4 @@ echo $PATH | tr -s ':' '\n' | wc -l counts the number of directories in the PATH
 printenv lists environment variables
 set lists all local variables and environment variables, and functions
 BETTY="Holberton" creates a new local variable. Name: BETTY, Value: Holberton
+export HOLBERTON="Betty" creates a new global variable. Name: HOLBERTON, Value: Betty
