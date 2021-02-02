@@ -11,3 +11,4 @@ echo $((BREATH**LOVE)) displays the result of BREATH to the power LOVE. BREATH a
 echo $((2#$BINARY)) script that converts a number from base 2 to base 10. The number in base 2 is stored in the environment variable BINARY. The script should display the number in base 10.
 printf %s'\n' {a..z}{a..z} | grep -v "oo" prints all possible combinations of two letters, except oo. Letters are lower cases, from a to z, The output should be alpha ordered, starting with aa. 64 characters maximun.
 printf %0.2f'\n' $NUM prints a number with two decimal places, followed by a new line. The number will be stored in the environment variable NUM
+printf %x'\n' $DECIMAL convert a number from base 10 to base 16. The number in base 10 is stored in the environment variable DECIMAL. The scrip display the number in base 16.
