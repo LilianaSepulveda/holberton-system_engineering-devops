@@ -8,3 +8,4 @@ export HOLBERTON="Betty" creates a new global variable. Name: HOLBERTON, Value: 
 echo $((TRUEKNOWLEDGE+128)) prints the result of the addition of 128 with the value stored in the environment variable TRUEKNOWLEDGE
 echo $((POWER/DIVIDE)) the result of POWER divided by DIVIDE, followed by a new line. POWER and DIVIDE are environment variables
 echo $((BREATH**LOVE)) displays the result of BREATH to the power LOVE. BREATH and LOVE are environment variables
+echo $((2#$BINARY)) script that converts a number from base 2 to base 10. The number in base 2 is stored in the environment variable BINARY. The script should display the number in base 10.
