@@ -21,4 +21,4 @@ tr A Z | tr c e Replace all characters A and c from input to Z and e respectivel
 tr -d c | tr -d C Create a script that removes all letters c and C from input
 rev Write a script that reverse its input
 cat /etc/passwd | cut -d: -f1,6 | sort displays all users and their home directories, sorted by users
-find . -empty -printf %f'\n'  lists all the files with a .gif extension in the current directory and all its sub-directories (including Hidden files Only regular files not directories, names of the files without their extensions)
+find . -empty | rev | cut -d/ -f1 | rev lists all the files with a .gif extension in the current directory and all its sub-directories (including Hidden files Only regular files not directories, names of the files without their extensions)
