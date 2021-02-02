@@ -12,3 +12,4 @@ find . -name "*.js" -type f -delete deletes all the regular files (not the direc
 find . -mindepth 1 -type d | wc -l  counts the number of directories and sub-directories in the current directory (hidden directories too)
 ls -1t | head displays the 10 newest files in the current directory
 sort | uniq -u takes a list of words as input and prints only words that appear exactly once
+grep root /etc/passwd Display lines containing the pattern root from the file /etc/passwd
