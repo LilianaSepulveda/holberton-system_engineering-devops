@@ -9,3 +9,4 @@ echo $((TRUEKNOWLEDGE+128)) prints the result of the addition of 128 with the va
 echo $((POWER/DIVIDE)) the result of POWER divided by DIVIDE, followed by a new line. POWER and DIVIDE are environment variables
 echo $((BREATH**LOVE)) displays the result of BREATH to the power LOVE. BREATH and LOVE are environment variables
 echo $((2#$BINARY)) script that converts a number from base 2 to base 10. The number in base 2 is stored in the environment variable BINARY. The script should display the number in base 10.
+printf %s'\n' {a..z}{a..z} | grep -v "oo" prints all possible combinations of two letters, except oo. Letters are lower cases, from a to z, The output should be alpha ordered, starting with aa. 64 characters maximun.
