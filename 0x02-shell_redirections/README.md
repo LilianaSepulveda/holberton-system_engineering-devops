@@ -20,4 +20,4 @@ grep ^[[:alpha:]] /etc/ssh/sshd_config all lines of the file /etc/ssh/sshd_confi
 tr A Z | tr c e Replace all characters A and c from input to Z and e respectively
 tr -d c | tr -d C Create a script that removes all letters c and C from input
 rev Write a script that reverse its input
-sort /etc/passwd | cut -d : -f1,6 displays all users and their home directories, sorted by users
+cat /etc/passwd | cut -d: -f1,6 | sort displays all users and their home directories, sorted by users
