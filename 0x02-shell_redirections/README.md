@@ -24,3 +24,4 @@ cat /etc/passwd | cut -d: -f1,6 | sort displays all users and their home directo
 find . -empty | rev | cut -d/ -f1 | rev find all empty files and directories in the current directory and all sub-directories, Hidden files too
 find . -type f -name \*.gif -printf "%f\n" | LC_ALL=C sort -f | rev | cut -b 5- | rev lists all the files with a .gif extension in the current directory and all its sub-directories (including Hidden files Only regular files not directories, names of the files without their extensions)
 cut -c 1 | tr -d '\n' | rev | rev decodes acrostics that use the first letter of each line
+tail -n+2 | cut -f1 | sort | uniq -c | sort -rn | cut -c 9- | head -11 parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests
