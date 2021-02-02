@@ -7,3 +7,4 @@ BETTY="Holberton" creates a new local variable. Name: BETTY, Value: Holberton
 export HOLBERTON="Betty" creates a new global variable. Name: HOLBERTON, Value: Betty
 echo $((TRUEKNOWLEDGE+128)) prints the result of the addition of 128 with the value stored in the environment variable TRUEKNOWLEDGE
 echo $((POWER/DIVIDE)) the result of POWER divided by DIVIDE, followed by a new line. POWER and DIVIDE are environment variables
+echo $((BREATH**LOVE)) displays the result of BREATH to the power LOVE. BREATH and LOVE are environment variables
