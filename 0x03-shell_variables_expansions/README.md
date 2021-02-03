@@ -14,3 +14,4 @@ printf %0.2f'\n' $NUM prints a number with two decimal places, followed by a new
 printf %x'\n' $DECIMAL convert a number from base 10 to base 16. The number in base 10 is stored in the environment variable DECIMAL. The scrip display the number in base 16.
 tr '[A-Za-z]' '[N-ZA-Mn-za-m]' encode and decode text using the rot13 encryption. Assume ASCII.
 cat -n | cut -b 6- | grep ^[13579] | cut -f2  prints every other line from the input, starting with the first line
+printf "%o\n" $(( (5#$(echo $WATER | tr '[water]' '[01234]')) + (5#$(echo $STIR | tr '[stir.]' '[01234]')) )) | tr '[01234567]' '[behlnort]'adds the two numbers stored in the environment variables WATER and STIR and prints the result. WATER is in base water. STIR is in base stir. The result should be in base behlnort
