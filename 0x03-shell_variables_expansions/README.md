@@ -13,3 +13,4 @@ printf %s'\n' {a..z}{a..z} | grep -v "oo" prints all possible combinations of tw
 printf %0.2f'\n' $NUM prints a number with two decimal places, followed by a new line. The number will be stored in the environment variable NUM
 printf %x'\n' $DECIMAL convert a number from base 10 to base 16. The number in base 10 is stored in the environment variable DECIMAL. The scrip display the number in base 16.
 tr '[A-Za-z]' '[N-ZA-Mn-za-m]' encode and decode text using the rot13 encryption. Assume ASCII.
+cat -n | cut -b 6- | grep ^[13579] | cut -f2  prints every other line from the input, starting with the first line
