@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# scrip that displays indefinitely and show other line when receiving a SIGTERM signal
+# infinite and show other line when receiving a SIGTERM signal
 while ((13))
 do
 	echo "To infinity and beyond"
