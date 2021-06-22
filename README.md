@@ -1,1 +1,2 @@
-Doing the project 0x05. Processes and signals
+Learning about permissions, variables expansions, loops conditions, parsing
+and process and signals in bash
