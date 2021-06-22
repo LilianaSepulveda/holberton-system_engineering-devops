@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# scrip that displays "To infinity and beyond" indefinitely
+# with a sleep 2 in between interaction
+while [ 1 -ne 0 ]
+do
+	sleep 2
+	echo "To infinity and beyond"
+done
