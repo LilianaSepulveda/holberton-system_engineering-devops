@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # infinite and show other line when receiving a SIGTERM signal
+trap 'echo "I am invincible"' SIGTERM
 while ((13))
 do
 	echo "To infinity and beyond"
 	sleep 2
-	trap 'echo "I am invincible"' SIGTERM
 done
