@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 # scrip that configures a Ubuntu server with:
 # localhost 127.0.0.2 and facebook.com resolves to 8.8.8.8.
-tp=~/hosts.new
-cp /etc/hosts "$tp"
+echo -e "127.0.0.2 localhost\n8.8.8.8 facebook.com" > /etc/hosts
