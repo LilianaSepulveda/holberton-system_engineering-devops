@@ -12,9 +12,9 @@ file { 'index':
 }
 
 file_line { '301 Moved Permanently':
-  provider => shell,
-  command  => 'sed -i '/listen 80 default_server;/a rewrite ^/redirect_me https://twitter.com/LiliSepulveda13 permanent;' /etc/nginx/sites-available/default',
-
+  path  => '/etc/nginx/sites-available/default',
+  line  => '\trewrite ^/redirect_me https://twitter.com/LiliSepulveda13 permanent;',
+  after => '^server {'
 }
 
 service { 'nginx':
