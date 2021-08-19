@@ -1,4 +1,4 @@
-# configue server Nginx with puppet
+# configure server Nginx with puppet
 
 package { 'nginx':
   ensure   => 'latest',
@@ -12,9 +12,9 @@ file { 'index':
 }
 
 file_line { '301 Moved Permanently':
-  path  => '/etc/nginx/sites-available/default',
-  line  => '\trewrite ^/redirect_me https://twitter.com/LiliSepulveda13 permanent;',
-  after => '^server {'
+  provider => shell,
+  command  => 'sed -i '/listen 80 default_server;/a rewrite ^/redirect_me https://twitter.com/LiliSepulveda13 permanent;' /etc/nginx/sites-available/default',
+
 }
 
 service { 'nginx':
