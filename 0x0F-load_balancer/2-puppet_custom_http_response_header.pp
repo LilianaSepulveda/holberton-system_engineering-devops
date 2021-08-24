@@ -10,7 +10,7 @@ package { 'nginx':
   require => Exec['update'],
 }
 
-file_line { 'custom_header':
+file_line { 'c_header':
   ensure  => present,
   path    => '/etc/nginx/sites-available/default',
   after   => 'listen 80 default_server;',
@@ -18,8 +18,8 @@ file_line { 'custom_header':
   require => Package['nginx'],
 }
 
-exec { 'restart':
+exec { 'restart_nginx':
   command => 'sudo service nginx restart',
   path    => ['/usr/bin', '/bin'],
-  require => File_line['custom_header'],
+  require => File_line['c_header'],
 }
