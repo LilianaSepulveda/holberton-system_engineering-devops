@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# configure with Ngin-X
+# configure server with Ngin-X
 
 sudo apt-get -y update
 sudo apt-get -y install nginx
